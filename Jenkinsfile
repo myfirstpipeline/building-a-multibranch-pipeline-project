@@ -2,7 +2,6 @@ pipeline {
     agent {
         docker {
             image 'node:latest'  // Use the Node.js Docker image
-            label 'node'         // Optional: A label to identify the node
             args '-u root:root'  // Optional: Run as root or specified user if needed
         }
     }
